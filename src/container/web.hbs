@@ -1,0 +1,80 @@
+<div>
+    {{> title data='WEB:' big=true}}
+    <hr>
+    {{#with web}}
+    <main>
+        <section>
+            <b>languages:</b>
+            <ul>
+                {{#each languages}}
+                <li>{{name}}</li>
+                <li>{{version}}</li>
+                <li>{{description}}</li>
+                <hr>
+
+                <li><b>elements:</b>
+                <ul>
+                    {{#each elements}}
+                    <li>{{name}}</li>
+                    <li>{{description}}</li>
+                    <hr>
+
+                    <li><b>attributes:</b>
+                    <ul>
+                        {{#each attributes}}
+                        <li>{{name}}</li>
+                        <li>{{description}}</li>
+                        {{/each}}
+                    </ul>
+                    </li>
+                    {{/each}}
+                </ul>
+                </li>
+                <hr>
+
+                <li><b>properties:</b>
+              <ul>
+            {{#each properties}}
+                <li>{{name}}</li>
+                <li>{{description}}</li>
+                <hr>
+
+                <li><b>values:</b>
+                <ul>
+                    {{#each values}}
+                    <li>{{value}}</li>
+                    <li>{{description}}</li>
+                    {{/each}}
+                </ul>
+                </li>
+            {{/each}}
+           </ul>
+          </li>
+          <hr>
+
+          <li><b>functions:</b>
+          <ul>
+            {{#each functions}}
+            <li>{{name}}</li>
+            <li>{{description}}</li>
+            <hr>
+            
+            <li><b>parameters:</b>
+            <ul>
+                {{#each parameters}}
+                <li>{{name}}</li>
+                <li>{{type}}</li>
+                <li>{{description}}</li>
+                {{/each}}
+            </ul>
+            </li>
+            {{/each}}
+          </ul>
+          </li>
+         {{/each}}
+       </ul>
+       <hr>
+     </section>
+    </main>
+    {{/with}}
+</div>
