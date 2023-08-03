@@ -1,0 +1,62 @@
+<div>
+    <main>
+        <section>
+            <div><h1>{{name}}</h1></div>
+            <hr>
+
+            <div><big><span class="badge text-bg-secondary">Users:</span></big></div>
+            <ul>
+                {{#each users}}
+                <li><b><small>id:</small></b>{{id}}</li>
+                <li><b><small>name:</small></b>{{name}}</li>
+                <li><b><small>gender:</small></b>{{gender}}</li>
+                <li><b><small>age:</small></b>{{age}}</li>
+                <li><b><small><mark>friends:</mark></small></b>
+                <ul>
+                    {{#each friends}}
+                    <li><b><small>id:</small></b>{{id}}</li>
+                    <li><b><small>name:</small></b>{{name}}</li>
+                    <li><b><small>gender:</small></b>{{gender}}</li>
+                    <li><b><small>age:</small></b>{{age}}</li>
+                    <li><b><small><mark>mutual_friends:</mark></small></b>
+                    <ul>
+                        {{#each mutual_friends}}
+                        <li><b><small>id:</small></b>{{id}}</li>
+                        <li><b><small>name:</small></b>{{name}}</li>
+                        <li><b><small>gender:</small></b>{{gender}}</li>
+                        <li><b><small>age:</small></b>{{age}}</li><br>
+                        {{/each}}
+                    </ul>
+                    </li>
+
+                    <li><b><small><mark>groups:</mark></small></b>
+                    <ul>
+                    {{#each groups}}
+                    <li><b><small>id:</small></b>{{id}}</li>
+                    <li><b><small>name:</small></b>{{name}}</li>
+                    <li><b><small>description:</small></b>{{description}}</li>
+                    <li><b><small><mark>members:</mark></small></b>
+                    <ul>
+                       {{#each members}}
+                       <li><b><small>id:</small></b>{{id}}</li>
+                       <li><b><small>name:</small></b>{{name}}</li>
+                       <li><b><small>gender:</small></b>{{gender}}</li>
+                       <li><b><small>age:</small></b>{{age}}</li><br>
+                       {{/each}}
+                    </ul>
+                    </li>
+                    {{/each}}
+                    </ul>
+                    </li>
+
+
+
+                    {{/each}}
+                    </ul>
+                    </li>
+                    <br><hr>
+                  {{/each}}
+            </ul>
+        </section>
+    </main>
+</div>
