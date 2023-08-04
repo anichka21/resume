@@ -1,0 +1,126 @@
+<div>
+    <main>
+        <section>
+
+                <div class="card">
+                <div class="card-body">
+                <h1 class="display-1">Heading</h1>
+                {{#with heading}}
+
+                {{#with main}}
+                <div><b>{{title}}:</div>
+                <div>{{text}}</b></div>
+                <div>{{#with button_text}}
+                <p><div class="btn btn-primary">{{solid}}</div></p>
+                <p><div class="btn btn-outline-primary">{{outline}}</div></p>
+                {{/with}}
+                </div>
+                {{/with}}
+                </div>
+                </div>
+                </div>
+                <br>
+               
+                <div class="card">
+                <div class="card-body">
+                <h1 class="display-1">Heading second</h1>
+                    {{#with second}}
+                <div>{{title}}</div>
+                <div>{{text}}</div>
+                <div>{{#with button_text}}
+                    <p><div class="btn btn-secondary">{{solid}}</div></p>
+                    <p><div class="btn btn-outline-secondary">{{outline}}</div></p>
+                    {{/with}}
+                </div>
+                {{/with}}
+                </div>
+                </div>
+                <br>
+
+                <div class="card">
+                <div class="card-body">
+                <h1 class="display-1">Heading subblock</h1>
+                {{#with subblock}}
+                <div>{{title}}</div>
+                <div>{{text}}</div>
+                <div>{{#with button_text}}
+                    <p><div class="btn btn-dark">{{solid}}</div></p>
+                    <p><div class="btn btn-outline-dark">{{outline}}</div></p>
+                    {{/with}}
+                </div>
+                {{/with}}
+                </div>
+                </div>
+                <br>
+                {{/with}}
+
+                <div class="card">
+                <div class="card-body">
+                <h1 class="display-1">nested</h1>
+                {{#with nested_display}}
+                <div><b>{{title}}</b></div>
+                <br>
+
+                <div class="card">
+                <div class="card-body">
+                <h1 class="display-4">children</h1>
+                <div>{{#with children_display}}
+                <div><b>{{title}},</div>
+                <div>{{text}}</b></div>
+                <div>{{#with button}}
+                <div class="btn btn-outline-warning">{{text}}</div>
+                {{/with}}
+                </div>
+                {{/with}}
+                </div>
+                </div>
+                </div>
+                <br>
+
+                <h1 class="display-6">Heading</h1>
+                <div>{{header_text}}</div>
+                <div>{{#with button}}
+                <div class="btn btn-info">{{text}}</div>
+                {{/with}}
+                </div>
+                </div>
+                </div>
+                <br>
+                {{/with}}
+                </div>
+                </div>
+                <br>
+                
+                <div class="card">
+                <div class="card-body">
+                <h1 class="text-uppercase">paragraph</h1>
+                <br>
+
+                {{#with paragraph}}
+                <div>{{title}}</div>
+                <div>{{text}}</div><br>
+                <div>{{#with button}}
+
+                <div><a href='#' class="btn btn-link">{{url}}</a></div><br>
+                {{/with}}
+
+                <div class="card">
+                <div class="card-body">
+                <div>
+                <ul>
+                {{#each list_name}}
+                <p></p><li><a href='#' class="btn btn-link">{{url}}</a></li></p>
+                {{/each}}
+                </ul>
+                </div>
+                </div>
+                </div>
+                {{/with}}
+                </div>
+                </div>
+                <br>
+
+            
+        </section>
+    </main>
+</div>
