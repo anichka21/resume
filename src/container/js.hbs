@@ -1,0 +1,72 @@
+<div>
+    <mai>
+        <section>
+            <div><b>{{name}}</b></div>
+            <div><q>{{description}}</q></div>
+            <hr>
+
+            <div><mark>history:</mark>
+            {{#with history}}
+            <div><time>~{{year}}</time></div>
+            <div>~{{founder}}</div>
+            {{/with}}
+            </div>
+            <hr>
+
+            <div><mark>types:</mark>
+            <ul>
+                {{#each types}}
+                <li><span class="badge text-bg-dark">{{this}}</span></li>
+                {{/each}}
+            </ul>
+            </div>
+            <hr>
+
+            <div><mark>syntax:</mark>
+            <ul>
+                {{#each syntax}}
+                <li><span class="badge text-bg-info">{{this}}</span></li>
+                {{/each}}
+            </ul>
+            </div>
+            <hr>
+
+            <div><mark>features:</mark>
+            <ul>
+                {{#each features}}
+                <li><span class="badge text-bg-success">{{this}}</span></li>
+                {{/each}}
+            </ul>
+            </div>
+            <hr>
+
+            <div><mark>libraries:</mark>
+            <ul>
+                {{#each libraries}}
+                <li><span class="badge text-bg-danger">{{this}}</span></li>
+                {{/each}}
+            </ul>
+            </div>
+            <hr>
+
+            <div><mark>tools:</mark>
+            <ul>
+                {{#each tools}}
+                <li><span class="badge text-bg-primary">{{this}}</span></li>
+                {{/each}}
+            </ul>
+            </div>
+            <hr>
+
+            <div><mark>community:</mark>
+             <ul>
+                {{#each community}}
+                <li><span class="badge text-bg-light">{{name}}</span></li>
+                <li><span class="badge text-bg-secondary">{{type}}</span></li>
+                {{/each}}
+             </ul>
+            </div>
+            <hr>
+        </section>
+    </mai>
+</div>
