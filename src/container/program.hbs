@@ -1,4 +1,4 @@
-<div>
+<div class="p-3">
     {{#with program}}
     <main>
         <section>
@@ -7,11 +7,11 @@
             <div><big>{{name}}</big></div>
             <div><mark>location:</mark>
                 {{#with location}}
-                 <div><address>{{city}},</address></div>
-                 <div><address>{{country}}</address></div>
+                 <div><address>{{city}}, {{country}}</address></div>
+                 
                 {{/with}}
             </div>
-            <div><time>{{date}}</time></div>
+            <time>{{date}}</time>
             <hr>
             
             <div><mark>program:</mark>

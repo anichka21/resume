@@ -3,8 +3,7 @@
    <section>
     {{> title data="My educaptions" big=true}}
     <div>
-      <mark>
-         <ul>
+      <ul>
           {{#each educations}}
             <li>
               {{name}}
@@ -13,20 +12,17 @@
             </li>
           {{/each}}
          </ul>
-      </mark> 
-    </div>
+      </div>
    </section>
    <section>
     {{> title data='My sertificates' }}
     <div>
-      <mark>
-        <ul>
+      <ul>
         {{#each sertificates}}
         <li>{{name}}({{id}})</li>
           {{/each}}
         </ul>
-      </mark>
-    </div>
+      </div>
    </section>
  </main>
 {{/with}}

@@ -1,4 +1,4 @@
-<div>
+<div class="p-3">
     <main>
         <section>
             <div><b>{{make}}</b></div>
@@ -13,7 +13,7 @@
 
             <div><mark>interior:</mark>
             {{#with interior}}
-            <div><b>seats:</b>
+            <div class="pb-3"><b>seats:</b>
                 {{#with seats}}
                 <div>{{material}}</div>
                 <div>{{color}}</div>
@@ -23,13 +23,12 @@
                 </div>               
                 {{/with}}
             </div>
-            <br>
 
             <div><b>dashboard:</b>
             {{#with dashboard}}
             <div>{{material}}</div>
             <div>{{color}}</div>
-            <div><small>display:</small>
+            <div class="pb-3"><small>display:</small>
             {{#with display}}
             <div>{{type}}</div>
             <div>{{size}}</div>
@@ -40,7 +39,6 @@
             </div>
             {{/with}}
             </div>
-            <br>
 
             <div><b>audio:</b>
             {{#with audio}}
@@ -58,23 +56,21 @@
             <div><mark>exterior:</mark>
             {{#with exterior}}
 
-            <div><b>wheels:</b>
+            <div class="pb-3"><b>wheels:</b>
             {{#with wheels}}
             <div>{{size}}</div>
             <div>{{type}}</div>
             <div>{{color}}</div>
             {{/with}}
             </div>
-            <br>
 
-            <div><b>headlights:</b>
+            <div class="pb-3"><b>headlights:</b>
             {{#with headlights}}
             <div>{{type}}</div>
             <div>{{brightness}}</div>
             <div>{{automatic}}</div>
             {{/with}}
             </div>
-            <br>
 
             <div><b>sunroof:</b>
             {{#with sunroof}}
@@ -90,7 +86,7 @@
             <div><mark>safety:</mark>
             {{#with safety}}
 
-            <div><b>airbags:</b>
+            <div class="pb-3"><b>airbags:</b>
             {{#with airbags}}
             <div>{{front}}</div>
             <div>{{side}}</div>
@@ -98,7 +94,6 @@
             <div>{{rear}}</div>
             {{/with}}
             </div>
-            <br>
 
             <div><b>assistance:</b>
             {{#with assistance}}
@@ -120,9 +115,8 @@
             <div>{{type}}</div>
             <div>{{horsepower}}</div>
             <div>{{torque}}</div>
-            <br>
 
-            <div><b>transmission:</b>
+            <div class="pt-3"><b>transmission:</b>
             {{#with transmission}}
             <div>{{type}}</div>
             <div>{{gears}}</div>
@@ -145,9 +139,8 @@
             {{#with price}}
             <div>{{base}}</div>
             <div>{{destination}}</div>
-            <br>
 
-            <div><b>options:</b>
+            <div class="pb-3 pt-3"><b>options:</b>
             {{#with options}}
             <div>{{navigation}}</div>
             <div>{{moonroof}}</div>
@@ -155,7 +148,7 @@
             {{/with}}
             </div>
 
-            <div>{{total}}</div>
+            <div><b>total:</b> {{total}}</div>
             {{/with}}
             </div>
         </section>

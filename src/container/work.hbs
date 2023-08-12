@@ -7,56 +7,47 @@
     {{#with main}}
        <main>
         <section>
-            {{> title data="Work history"  big=true}}
+            <div class="p-2">{{> title data="Work history" big=true}}</div>
             <div>
                 <p>
                  <ul>
                    {{#each works}}
                     <li>
-                     <div>{{position}}</div>
-                     <br>
+                     <div class="pb-3">{{position}}</div>
 
-                     <div>{{duration.from}} - 
+                     <div class="pb-3">{{duration.from}} - 
                         {{#if duration.to }}
                             {{duration.to}} 
                         {{else}}
                             (досі тут працємо) 
                         {{/if}}
                      </div>
-                     <br>
 
                      <div>{{> link text=compane.name href=compane.url blank=true noLine=true}}</div>
-                     <br>
                     
-                     <br>
-                    <div>
+                     
+                    <div class="pt-5 pb-3">
                         <strong>Projects ({{projectAmount}})</strong>
                     </div>
-                    <br>
 
                     <ul>
                      {{#each projects}}
                       <li>
                        <div>{{> link text=name href=url blank=true noLine=true}}</div>
-                       <br>
 
                       <p>
                        <div>{{about}}</div>
                       </p>
-                      <br>
 
                       <div><em>Projects stacks ({{stackAmount}})</em></div>
-                      <br>
                       <div>
                         <ul>{{#each stacks}}
                             <li>{{name}}</li>
                             {{/each}}
                         </ul>
                      </div>
-                      <br>
                        
-                        <div><em>Projects awards</em></div>
-                         <br>
+                        <div class="pt-3"><em>Projects awards</em></div>
                           <div>
                            <ul>{{#each awards}}
                             <li>{{name}}</li>

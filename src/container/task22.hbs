@@ -3,17 +3,16 @@
         <section>
 
 
-            <div>{{#with page_header}}
-            <div class="text-center"><h1>{{title}}</h1></div>
+            <div class="pb-3">{{#with page_header}}
+            <div class="text-center pt-3"><h1 class="display-4">{{title}}</h1></div>
             <div class="text-center">{{description}}</div>
             {{/with}}
             </div>
-            <br>
 
             
             <div>{{#with section}}
                 
-            <div class="card">
+            <div class="card m-2">
             <div class="card-body">
             <div>{{#with about_us}}
             <div>{{#with title_list}}
@@ -29,9 +28,8 @@
             </div>
             </div>
             </div>
-            <br>
 
-            <div class="card">
+            <div class="card m-2">
             <div class="card-body">
             <div>{{#with advantage}}
             <div class="display-5">{{title}}</div><br>
@@ -47,10 +45,10 @@
             </div>
             </div>
             </div>
-            <br>
+            
 
 
-            <div class="card">
+            <div class="card m-2">
             <div class="card-body">
             <div>{{#with innovation}}
             <div class="display-4 text-center">{{title}}</div><br>
@@ -61,10 +59,10 @@
             </div>
             </div>
             </div>
-            <br>
+            
 
             
-            <div class="card">
+            <div class="card m-2">
             <div class="card-body">
             <div>{{#with collaboration}}
             <div class="display-4 text-end">{{title}}</div><br>
@@ -83,20 +81,20 @@
             <div>
             </div>
             </div>
-            <br>
+            
 
 
-            <div class="card">
+            <div class="card m-2">
             <div class="card-body">
             <div>{{#with agreement}}
-            <div class="display-5">{{title}}</div><br>
+            <div class="display-5">{{title}}</div>
 
-            <div class="card">
+            <div class="card mt-3">
             <div class="card-body">
             <div>{{#with info}}
-            <div><h5>{{sub_title}}</h5></div><br>
+            <div><h5>{{sub_title}}</h5></div>
 
-            <div class="card">
+            <div class="card mt-3">
             <div class="card-body">
             <div>{{#with detail}}
             <div>{{text}}</div><br>
@@ -117,11 +115,11 @@
      {{/with}}
    </div>
   </section>
- </main>
 
-            <h1 class="display=1 text=center">Page_header</h1>
 
-            <div>{{#with page_header}}
+            <h1 class="display=1 text=center p-3 pb-0">Page_header</h1>
+
+            <div class="p-3">{{#with page_header}}
                 <div>{{title}}</div>
                 <div>{{description}}</div>
                 {{/with}}
